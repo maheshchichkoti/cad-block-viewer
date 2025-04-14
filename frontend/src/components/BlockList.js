@@ -74,17 +74,18 @@ function BlockList({ fileId }) {
     loadBlocks(currentPage);
   }, [fileId, currentPage, debouncedSearchTerm, loadBlocks]); // Include loadBlocks in dependency array
 
-  const handlePreviousPage = () => {
+  // Wrap these functions in useCallback to prevent them from being recreated on every render
+  const handlePreviousPage = useCallback(() => {
     if (currentPage > 1) {
       setCurrentPage((prev) => prev - 1);
     }
-  };
+  }, [currentPage]);
 
-  const handleNextPage = () => {
+  const handleNextPage = useCallback(() => {
     if (currentPage < totalPages) {
       setCurrentPage((prev) => prev + 1);
     }
-  };
+  }, [currentPage, totalPages]);
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
