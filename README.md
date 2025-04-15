@@ -168,6 +168,6 @@ Used an AI coding assistant (like ChatGPT or GitHub Copilot) throughout the deve
 
 ## Demo Video
 
-[https://www.example.com/cad-viewer-demo](https://www.example.com/cad-viewer-demo) (Replace with your actual video link - e.g., Loom, YouTube, Google Drive)
+[https://www.awesomescreenshot.com/video/38775997?key=de44c56363da8a7b39271b293673198d](https://www.awesomescreenshot.com/video/38775997?key=de44c56363da8a7b39271b293673198d)
 
 ---
